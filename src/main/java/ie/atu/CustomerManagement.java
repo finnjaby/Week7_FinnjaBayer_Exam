@@ -58,6 +58,9 @@ public class CustomerManagement{
                         email = sc.next();
                         c.setEmail(email);
                     }
+                    else{
+                        System.out.println("Customer not found");
+                    }
                 }
             } else if (input == 3) {
                 for (Customer c : customers) {
