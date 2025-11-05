@@ -60,6 +60,11 @@ public class CustomerManagement{
                 }
             }
         }
+        else if(input ==3){
+            for(Customer c : customers){
+                System.out.println("Id : "+c.getCostumerId() + " Name: "+c.getName() + " Email: "+c.getEmail()  + " Phone Number: "+c.getPhoneNumber());
+            }
+        }
 
 
     }
