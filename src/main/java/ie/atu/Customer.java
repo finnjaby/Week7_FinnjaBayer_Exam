@@ -1,20 +1,20 @@
 package ie.atu;
 
 public class Customer {
-    int costumerId;
+    int customerId;
     String name;
     String email;
     int phoneNumber;
 
     Customer(){
-        costumerId = 0;
+        customerId = 0;
         name = "not set";
         email = "not set";
         phoneNumber =0;
     }
 
     void setCostumerId(int costumerId){
-        this.costumerId = costumerId;
+        this.customerId = costumerId;
     }
     void setName(String name){
         this.name = name;
@@ -27,7 +27,7 @@ public class Customer {
     }
 
     int getCostumerId(){
-        return costumerId;
+        return customerId;
     }
     String getName(){
         return name;
