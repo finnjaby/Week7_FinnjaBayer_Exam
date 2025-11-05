@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CustomerManagement{
     public static void main(String[] args){
+        ArrayList<Customer> customers = new ArrayList<>();
         System.out.println("=== Customer Management System ===");
         System.out.println("1) Add Customer");
         System.out.println("2) Update Customer");
@@ -14,6 +15,29 @@ public class CustomerManagement{
         int input;
         Scanner sc = new Scanner(System.in);
         input = sc.nextInt();
+
+        int costumerId;
+        String name;
+        String email;
+        int phoneNumber;
+
+        if(input == 1){
+            Customer c = new Customer();
+                System.out.println("Enter customer Id: ");
+                costumerId = sc.nextInt();
+                c.setCostumerId(costumerId);
+
+                System.out.println("Enter customer phone number: ");
+                phoneNumber = sc.nextInt();
+                c.setPhoneNumber(phoneNumber);
+            System.out.println("Enter customer name: ");
+            name = sc.next();
+            c.setName(name);
+            System.out.println("Enter customer Email: ");
+            email = sc.next();
+            c.setEmail(email);
+                customers.add(c);
+        }
 
 
     }
