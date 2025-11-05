@@ -36,7 +36,29 @@ public class CustomerManagement{
             System.out.println("Enter customer Email: ");
             email = sc.next();
             c.setEmail(email);
-                customers.add(c);
+            customers.add(c);
+        }
+        else if(input==2){
+            System.out.println("Please enter customer Id you'd like to look for: ");
+            costumerId = sc.nextInt();
+            for(Customer c : customers){
+                if(c.getCostumerId()==costumerId){
+                    System.out.println("Please enter new information:");
+                    System.out.println("Enter customer Id: ");
+                    costumerId = sc.nextInt();
+                    c.setCostumerId(costumerId);
+
+                    System.out.println("Enter customer phone number: ");
+                    phoneNumber = sc.nextInt();
+                    c.setPhoneNumber(phoneNumber);
+                    System.out.println("Enter customer name: ");
+                    name = sc.next();
+                    c.setName(name);
+                    System.out.println("Enter customer Email: ");
+                    email = sc.next();
+                    c.setEmail(email);
+                }
+            }
         }
 
 
